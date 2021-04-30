@@ -1,0 +1,499 @@
+  /* google fonts */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&family=Iceberg&family=Iceland&family=Inconsolata:wght@400;500;600;700&family=Kelly+Slab&display=swap');
+  /* global styles */
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  html {
+      width: 100%;
+      margin: auto;
+      font-family: 'Iceberg', 'Iceland', 'Kelly Slab', cursive;
+      scroll-behavior: smooth;
+      background: black;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  /* ---------  nav  ---------*/
+  
+  header {
+      height: 10vh;
+      width: 80%;
+      margin: auto;
+      background-color: black;
+      display: block;
+      align-items: center;
+      z-index: 99;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      z-index: 99;
+  }
+  
+  nav h3 {
+      font-size: 3.5em;
+      color: RGB(7, 94, 224);
+      margin: 0 .5em;
+      font-family: 'Kelly Slab', cursive;
+      font-weight: bold;
+      font-style: italic;
+      text-shadow: rgb(141, 3, 31) 1px 2px;
+  }
+  
+  nav ul {
+      display: flex;
+      list-style: none;
+      text-align: center;
+  }
+  
+  nav ul li a {
+      margin: 0 .5em;
+      font-size: 2em;
+      color: rgb(12, 91, 215);
+  }
+  
+  nav ul li a:hover {
+      color: white;
+  }
+  /* ---------  landing  ---------*/
+  
+  #landing {
+      background: black;
+      display: flex;
+      height: 90vh;
+      width: 100%;
+  }
+  
+  button {
+      background: white;
+  }
+  
+  #topBtn {
+      padding: 4px 10px;
+      background-color: none;
+      border: none;
+      position: fixed;
+      z-index: 1000;
+      top: 92%;
+      left: 95%;
+      display: none;
+      cursor: pointer;
+      border-radius: 6px;
+  }
+  
+  #topBtn i {
+      color: rgb(12, 91, 215);
+      font-size: 3em;
+  }
+  
+  #topBtn:hover {
+      background: rgba(255, 255, 255, 0.582);
+  }
+  
+  .landing-contents {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60%;
+      text-align: center;
+      position: absolute;
+      padding: 3em;
+      z-index: 99;
+  }
+  
+  #landing h2 {
+      margin-top: 1em;
+      color: white;
+      font-size: 3.5em;
+      animation: landingtext 10s 100;
+  }
+  
+  @keyframes landingtext {
+      0% {
+          opacity: .6;
+      }
+      25% {
+          opacity: 1;
+      }
+      50% {
+          opacity: .6;
+      }
+      51% {
+          opacity: .6;
+      }
+      75% {
+          opacity: 1;
+      }
+      100% {
+          opacity: .6;
+      }
+  }
+  
+  .landing-background {
+      background: black;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .right-light {
+      position: absolute;
+      animation: lightbulb 10s 100;
+      width: 50%;
+      height: 80%;
+      right: -7%;
+      transform: rotate(270deg);
+      z-index: 1;
+  }
+  
+  .left-light {
+      position: absolute;
+      animation: lightbulb 10s 100;
+      width: 50%;
+      height: 80%;
+      left: -7%;
+      transform: rotate(90deg);
+      z-index: 1;
+  }
+  
+  @keyframes lightbulb {
+      0% {
+          opacity: .5;
+      }
+      25% {
+          opacity: 1;
+      }
+      50% {
+          opacity: .5;
+      }
+      51% {
+          opacity: .5;
+      }
+      75% {
+          opacity: 1;
+      }
+      100% {
+          opacity: .5;
+      }
+  }
+  
+  .button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      z-index: 99;
+  }
+  
+  .button {
+      color: rgb(12, 91, 215);
+      background: white;
+      padding: .5em 1em;
+      border-radius: 8px;
+      font-size: 2em;
+      font-weight: bold;
+      animation: button 10s 100;
+  }
+  
+  .button:hover {
+      color: white;
+      background: rgb(12, 91, 215);
+  }
+  
+  @keyframes button {
+      0% {
+          font-size: 2em;
+      }
+      25% {
+          font-size: 2.4em;
+      }
+      50% {
+          font-size: 2em;
+      }
+      51% {
+          font-size: 2em;
+      }
+      75% {
+          font-size: 2.2em;
+      }
+      100% {
+          font-size: 2em;
+      }
+  }
+  /* ----- services/News ---*/
+  
+  #services,
+  #news {
+      height: 90%;
+      width: 80%;
+      margin: auto;
+      padding-bottom: 3em;
+  }
+  
+  h2 {
+      margin-top: 1em;
+      color: white;
+      font-size: 3.5em;
+  }
+  
+  .card {
+      display: flex;
+      width: 100%;
+      background: rgba(12, 90, 215, 0.788);
+      margin: 1.5em auto;
+      border-radius: 8px;
+      border: 2px white solid;
+      box-shadow: 8px 8px white;
+  }
+  
+  #news .card {
+      border: 2px rgb(12, 90, 215) solid;
+      background: rgba(255, 255, 255, 0.863);
+      box-shadow: 8px 8px rgb(12, 90, 215);
+  }
+  
+  .card img {
+      border-radius: 8px;
+      width: 540px;
+  }
+  
+  .text-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1em;
+  }
+  
+  .text-wrapper h4 {
+      font-size: 2.5em;
+      margin: .5em 0;
+  }
+  
+  .text-wrapper p {
+      font-size: 1.5em;
+      color: white;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      line-height: 1.5;
+  }
+  
+  #news .text-wrapper p {
+      color: rgb(12, 90, 215);
+  }
+  
+  .text-wrapper a {
+      color: white;
+      font-weight: bold;
+      letter-spacing: 2px;
+  }
+  
+  #news .text-wrapper a {
+      color: rgb(12, 90, 215)
+  }
+  /* -----  footer ----- */
+  
+  footer {
+      height: 35%;
+      width: 100%;
+      background: rgb(197, 197, 197);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .icon-container {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      align-items: center;
+      margin: 2em auto;
+      padding: 1em 1em;
+  }
+  
+  footer h4 {
+      font-size: 2.5em;
+      margin-top: 1.5em;
+  }
+  
+  footer i {
+      font-size: 3em;
+      color: rgb(12, 91, 215);
+      text-shadow: black 1px 1px;
+  }
+  
+  .copyright {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 0 .5em .5em .5em;
+  }
+  
+  .copyright h3 {
+      font-size: 3em;
+      color: RGB(7, 94, 224);
+      margin-left: .5em;
+      font-family: 'Kelly Slab', cursive;
+      font-weight: bold;
+      font-style: italic;
+      text-shadow: rgb(141, 3, 31) 1px 2px;
+  }
+  
+  footer p {
+      margin: 1em;
+  }
+  /* ------ Media Queries ---- */
+  
+  @media screen and (max-width: 1232px) {
+      html {
+          font-size: 80%;
+          width: 90%;
+      }
+      #landing {
+          height: 90%;
+          padding-bottom: 12em;
+      }
+      #news,
+      #services {
+          width: 100%;
+      }
+      .landing-background {
+          display: flex;
+          flex-direction: column;
+          justify-content: initial;
+      }
+      .left-light {
+          display: none;
+      }
+      .landing-contents {
+          position: relative;
+          height: 20%;
+          padding: 1em;
+          z-index: 99;
+      }
+      #landing h2 {
+          margin-top: 0;
+      }
+      .right-light {
+          position: relative;
+          animation: lightbulb 10s 100;
+          width: 100%;
+          height: 50%;
+          transform: none;
+          z-index: 1;
+          right: 0;
+          padding: 6px;
+      }
+      .button-container {
+          bottom: -10%;
+      }
+      .card {
+          box-shadow: 2px 2px white;
+          margin: 2em 0;
+          height: 300px;
+      }
+      #news .card {
+          box-shadow: 2px 2px rgb(12, 91, 215);
+      }
+      .card img {
+          width: 260px;
+      }
+      #topBtn {
+          left: 90%;
+      }
+  }
+  
+  @media screen and (max-width: 902px) {
+      html {
+          font-size: 65%;
+      }
+      #landing {
+          height: 100%;
+          padding-bottom: 7em;
+      }
+      .landing-background {
+          justify-content: center;
+      }
+      #landing h2 {
+          margin-top: 0;
+      }
+      .button-container {
+          bottom: -10%;
+      }
+      .card {
+          height: 250px;
+      }
+      .card img {
+          width: 280px;
+      }
+      #topBtn {
+          left: 89%;
+      }
+      footer i {
+          font-size: 4em;
+      }
+  }
+  
+  @media screen and (max-width: 822px) {
+      html {
+          font-size: 60%;
+      }
+      #landing {
+          height: 110%;
+          padding-bottom: 20em;
+      }
+      .landing-background {
+          margin-top: 6em;
+          justify-content: center;
+      }
+      nav {
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      .button-container {
+          bottom: -18%;
+      }
+      .card img {
+          width: 140px;
+          height: 90%;
+          margin: auto;
+      }
+      .icon-container {
+          width: 100%;
+      }
+      #topBtn {
+          opacity: 0;
+      }
+  }
+  
+  @media screen and (max-width: 650px) {
+      html {
+          font-size: 45%;
+      }
+      #landing {
+          height: 110%;
+          padding-bottom: 150px;
+      }
+      #topBtn {
+          opacity: 0;
+      }
+  }
