@@ -28,8 +28,6 @@
       margin: auto;
       background-color: black;
       display: block;
-      align-items: center;
-      z-index: 99;
   }
   
   nav {
@@ -347,9 +345,8 @@
   }
   
   footer i {
-      font-size: 3em;
+      font-size: 4em;
       color: rgb(12, 91, 215);
-      text-shadow: black 1px 1px;
   }
   
   .copyright {
@@ -380,6 +377,9 @@
       html {
           font-size: 80%;
           width: 90%;
+      }
+      header {
+          width: 100%;
       }
       #landing {
           height: 90%;
@@ -461,9 +461,6 @@
       #topBtn {
           left: 89%;
       }
-      footer i {
-          font-size: 4em;
-      }
   }
   
   @media screen and (max-width: 822px) {
@@ -486,7 +483,6 @@
           bottom: -18%;
       }
       .card img {
-          width: 140px;
           height: 90%;
           margin: auto;
       }
@@ -505,6 +501,9 @@
       #landing {
           height: 110%;
           padding-bottom: 150px;
+      }
+      .card img {
+          width: 160px;
       }
       #topBtn {
           opacity: 0;
