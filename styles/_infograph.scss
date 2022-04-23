@@ -1,0 +1,42 @@
+#infograph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 100px;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+        margin-top: 30px;
+        height: 100px;
+        @media screen and (max-width: 650px) {
+            min-width: 100%;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        h3 {
+            font-size: var(--subtitle);
+            color: white;
+            margin: auto;
+            @media screen and (max-width: 650px) {
+                font-size: 20px;
+            }
+        }
+        p {
+            color: var(--paraColor);
+            font-size: var(--para);
+            @media screen and (max-width: 650px) {
+                font-size: 18px;
+            }
+        }
+    }
+}

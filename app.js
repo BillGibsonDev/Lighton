@@ -1,13 +1,8 @@
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("topBtn").style.display = "block";
+function toggleNav() {
+  let x = document.getElementById("mobile-nav");
+  if (x.style.width === "100%") {
+    x.style.width = "0%";
   } else {
-    document.getElementById("topBtn").style.display = "none";
+    x.style.width = "100%";
   }
-}
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
 }

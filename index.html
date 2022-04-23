@@ -5,110 +5,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LightOn || The Innovation Company</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/lightbulb0078d4.png" type="image/x-icon">
+    <title>LightOn | The Innovation Company</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/bbe4def61b.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-    <header id="home">
-        <nav>
-            <h3>LightOn</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="landing">
-        <button onclick="topFunction()" id="topBtn"><i class="fas fa-chevron-up"></i></button>
-        <div class="landing-background">
-            <img class="left-light" src="/images/lightbulb3.jpg" alt="lightbulb image">
-            <div class="landing-contents">
-                <h2>Sparking Innovation <br />One Light at a Time</h2>
-            </div>
-            <img class="right-light" src="/images/lightbulb3.jpg" alt="lightbulb image">
-            <div class="button-container">
-                <a class="button" href="#services">Learn More</a>
+    <nav id="home">
+        <h3>LightOn</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="mobile-nav" class="overlay">
+            <button id="closeNavButton" onclick='toggleNav()'>&times;</button>
+            <div class="overlay-content" onclick='toggleNav()'>
+                <a href='/'>Home</a>
+                <a href='/#services'>Services</a>
+                <a href='/#news'>News</a>
+                <a href='/#contact'>Contact</a>
             </div>
         </div>
-
+        <img onclick='toggleNav()' src='./images/menu0078d4.png' alt="menu" id="hamburger" />
+    </nav>
+    <section id="landing">
+        <div class="background"></div>
+        <div class="landing-text">
+            <h2>Sparking Innovation</h2>
+            <h2>One Light at a Time</h2>
+            <p>Lighton's mission is to innovate the world into a better, more practical and efficent place.</p>
+            <a class="button" href="#services">Learn More</a>
+        </div>
     </section>
     <section id="services">
-        <h2>How can LightOn help you?</h2>
+        <h2>Why choose <span class="logo">LightOn</span>?</h2>
         <div class="services-container">
             <article class="card">
+                <img class="media-query-image" src="/images/service3.jpg" alt="Team photo">
                 <div class="text-wrapper">
                     <h4>Our Team</h4>
-                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.<br />
-                        <a href="#">Learn More</a></p>
+                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.</p>
+                    <a href="#">Learn More</a>
                 </div>
-
-                <img src="/images/service3.jpg" alt="Team photo">
+                <img class="right-image" src="/images/service3.jpg" alt="Team photo">
             </article>
             <article class="card">
-                <img src="/images/serivce1.jpg" alt="Innovation photo">
+                <img class="left-image" src="/images/serivce1.jpg" alt="Innovation photo">
                 <div class="text-wrapper">
                     <h4>Innovation</h4>
-                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.
-                        <br /><a href="#">Learn More</a></p>
+                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.</p>
+                    <a href="#">Learn More</a>
                 </div>
             </article>
             <article class="card">
+                <img class="media-query-image" src="/images/service2.jpg" alt="Technology photo">
                 <div class="text-wrapper">
                     <h4>Technology</h4>
-                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.
-                        <br /><a href="#">Learn More</a></p>
+                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <img src="/images/service2.jpg" alt="Technology photo">
+                <img class="right-image" src="/images/service2.jpg" alt="Technology photo">
             </article>
         </div>
     </section>
+    <section id="infograph">
+        <article>
+            <img src="./images/leaf0078d4.png" alt="">
+            <h3>Efficency</h3>
+            <p>Efficent, customized solutions for your business needs.</p>
+        </article>
+        <article>
+            <img src="./images/gears0078d4.png" alt="">
+            <h3>Practical</h3>
+            <p>Practical, customized solutions for your business needs.</p>
+        </article>
+        <article>
+            <img src="./images/money0078d4.png" alt="">
+            <h3>Cost</h3>
+            <p>Improve margins with our solutions customized to your business needs.</p>
+        </article>
+    </section>
     <section id="news">
-        <h2>LightOn in the News</h2>
+        <h2><span class="logo">LightOn</span> in the News</h2>
         <div class="services-container">
             <article class="card">
+                <img class="media-query-image" src="/images/news2.jpg" alt="news photo">
                 <div class="text-wrapper">
                     <h4>Julie Smith Promoted to VP of Operations</h4>
-                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.
-                        <a href="#">Learn More</a></p>
+                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <img src="/images/news2.jpg" alt="news photo">
+                <img class="right-image" src="/images/news2.jpg" alt="news photo">
             </article>
             <article class="card">
                 <img src="/images/news1.jpg" alt="news photo">
                 <div class="text-wrapper">
                     <h4>Businesses see 33% more Efficency with LightOn</h4>
-                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.
-                        <a href="#">Learn More</a></p>
+                    <p>Our Team of driven proffesionals are here to help guide and focus your business towards excelling in any field. We will help analyze and outline the course ahead for your business and business needs.</p>
+                    <a href="#">Learn More</a>
                 </div>
             </article>
         </div>
     </section>
     <footer id="contact">
-        <h4>Stay Connected</h4>
-        <div class="icon-container">
-            <a href="https://facebook.com" target="_blank">
-                <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <i class="fab fa-twitter-square"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <i class="fas fa-envelope"></i>
-            </a>
+        <div class="footer-nav-wrapper">
+            <div class="icon-wrapper">
+                <h4>Stay Connected</h4>
+                <div class="icon-container">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="text-container">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="text-container">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Code of Conduct</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Factsheet</a>
+                </div>
+            </div>
         </div>
         <div class="copyright">
-            <h3>LightOn</h3>
+            <h3 class="logo">LightOn</h3>
             <p>&copy; 2021 LightOn.com</p>
         </div>
     </footer>
