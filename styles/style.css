@@ -748,7 +748,7 @@ footer .copyright p {
 :root {
   /* colors */
   --titleColor: #fff;
-  --accentColor: rgb(12, 90, 215);
+  --accentColor: #0078d4;
   --paraColor: #dbdbdb;
   /* fonts */
   --title: 3.5em;
